@@ -1,0 +1,14 @@
+#include <stdio.h>
+
+float calc(float a, float b, char op) {
+    return op=='+'?a+b : op=='-'?a-b : op=='*'?a*b : op=='/'?a/b : 0;
+}
+
+int main() {
+    float x, y;
+    char op;
+    printf("Enter expression (e.g. 4 + 5): ");
+    scanf("%f %c %f", &x, &op, &y);
+    printf("Result: %.2f\n", calc(x, y, op));
+    return 0;
+}
