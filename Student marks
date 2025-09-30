@@ -1,0 +1,16 @@
+#include <stdio.h>
+
+struct Student {
+    int m1, m2, m3;
+};
+
+int main() {
+    struct Student s;
+    printf("Enter 3 marks: ");
+    scanf("%d %d %d", &s.m1, &s.m2, &s.m3);
+    int total = s.m1 + s.m2 + s.m3;
+    float avg = total / 3.0;
+    printf("Total: %d\n", total);
+    printf("Average: %.2f\n", avg);
+    return 0;
+}
